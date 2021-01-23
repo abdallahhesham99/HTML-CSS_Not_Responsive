@@ -1,0 +1,26 @@
+/*3.14 Footer Section*/
+.footer {
+    background-color: #1c1d21;
+    padding: 60px 0;
+}
+.footer .footer-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.footer .footer-content .footer-social-icons {
+    margin: 20px 0;
+}
+.footer .footer-content .footer-social-icons ul li {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: var(--mainColor);
+    margin: 0 8px;
+    cursor: pointer;
+}
+.footer .footer-content .footer-social-icons ul li i {
+    color: var(--whiteColor);
+    line-height: 45px;
+}

@@ -1,0 +1,28 @@
+/*3.7 Achivements Section*/
+.achievement-section {
+    background-image: url(../images/background/background2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 60px 0;
+}
+
+.achievement-section .achieve-item {
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.achievement-section .achieve-item .achieve-item-icon {
+    color: #6195ff;
+
+    font-size: 35px;
+}
+.achievement-section .achieve-item .achieve-item-counter {
+    font-size: 35px;
+    color: var(--whiteColor);
+    margin: 0;
+}
+.achievement-section .achieve-item .achieve-item-desc {
+    color: var(--whiteColor);
+}

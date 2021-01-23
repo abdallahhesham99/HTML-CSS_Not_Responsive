@@ -1,0 +1,41 @@
+/*3.9 Testimonial Section*/
+
+.testimonial-section {
+    background-image: url(../images/background/background3.webp);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-attachment: fixed;
+}
+.testimonial-section .testimonial-content {
+    width: 80%;
+    margin: auto;
+}
+.testimonial-section .testimonial-item {
+    float: left;
+    width: 445px;
+    margin-right: 13px;
+}
+
+.testimonial-section .testimonial-item .testimonial-item-header .head {
+    position: relative;
+    padding: 20px 10px 40px 100px;
+}
+.testimonial-section .testimonial-item .testimonial-item-header .head h3 {
+    margin: 0;
+    color: var(--whiteColor);
+}
+.testimonial-section .testimonial-item .testimonial-item-header .head span {
+    color: var(--mainColor);
+}
+.testimonial-section .testimonial-item .testimonial-item-header .head img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonial-section .testimonial-item .testimonial-item-desc {
+    color: var(--whiteColor);
+}

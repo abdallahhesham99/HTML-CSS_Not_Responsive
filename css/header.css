@@ -1,0 +1,84 @@
+/* 3.1Header Section*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Navbar*/
+.header .navbar {
+    background-color: transparent;
+}
+
+.header .navbar .logo {
+    width: 40%;
+    float: left;
+}
+
+.header .navbar .logo img {
+    max-height: 50px;
+    margin-top: 10px;
+}
+
+.header .navbar .nav {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+.header .navbar .nav > li {
+    display: inline-block;
+    text-align: center;
+}
+
+.header .navbar .nav > li > a {
+    color: var(--whiteColor);
+    font-size: 15px;
+    padding: 20px 15px;
+    display: block;
+}
+
+.header .navbar .nav > li > a::after,
+.header .navbar .nav > li > a.active::after {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 8px;
+    background-color: var(--mainColor);
+    transition: 300ms width;
+}
+.header .navbar .nav > li > a.active::after {
+    width: 100%;
+}
+.header .navbar .nav > li > a::after {
+    width: 0%;
+}
+.header .navbar .nav > li > a:hover::after {
+    width: 100%;
+}
+.header .navbar .nav li.dropdown {
+    position: relative;
+}
+.header .navbar .nav li .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 120%;
+    left: -50%;
+    margin: 10px;
+    background-color: var(--mainColor);
+    width: 100px;
+    transition: opacity 300ms, visibility 300ms, top 300ms;
+}
+.header .navbar .nav li .dropdown-menu a {
+    color: var(--whiteColor);
+    padding: 8px 10px;
+    display: block;
+}
+.header .navbar .nav li.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 70%;
+}

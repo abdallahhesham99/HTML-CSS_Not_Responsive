@@ -1,0 +1,51 @@
+/*3.6 Choose Us Section*/
+.chooseUs-section {
+    background-color: var(--bg-grey);
+}
+.chooseUs-item {
+    float: left;
+    width: 50%;
+}
+.chooseUs-section .chooseUs-item .section-header {
+    text-align: left;
+}
+.chooseUs-section .chooseUs-item .section-header .section-line {
+    margin: 0;
+}
+
+.chooseUs-section .chooseUs-item .chooseUs-desc {
+    padding-right: 10px;
+}
+.chooseUs-section .chooseUs-item .chooseUs-list li {
+    margin: 10px 0;
+
+    position: relative;
+}
+.chooseUs-section .chooseUs-item .chooseUs-list li i {
+    border: 1px solid var(--mainColor);
+    border-radius: 50%;
+    padding: 5px;
+    color: var(--mainColor);
+}
+
+.chooseUs-img img {
+    width: 100%;
+}
+.chooseUs-item .chooseUs-bollets {
+    text-align: center;
+}
+.chooseUs-item .chooseUs-bollets li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #1c1d21;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: 300ms width, 300ms border-radius;
+}
+.chooseUs-item .chooseUs-bollets li.active {
+    background-color: #6195ff;
+    width: 20px;
+    border-radius: 10px;
+}

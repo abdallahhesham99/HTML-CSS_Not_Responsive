@@ -1,0 +1,198 @@
+/*
+? 1- Common Styles
+? 2- General Styles
+? 3- Section Styles
+     * 3.1- header section
+     * 3.2- home section
+     * 3.3- about section
+     * 3.4- portfolio section
+     * 3.5- services section
+     * 3.6- choose us
+     * 3.7- achivements
+     * 3.8- pricing section  
+     * 3.9- team section
+     2
+     * 3.10- blog section
+     * 3.11- contact section
+     * 3.12- Footer section
+*/
+
+/* 
+! 1- Common Styles */
+/*
+-container
+-overlay
+-seaction title
+-seaction padding top bottom
+-btn hover opacity
+-hover effect { 1 from left to right }
+-hover effect 2 from top to bottom
+*/
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity {
+    transition: 300ms opacity;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+
+.ltr-hover,
+.ttb-hover {
+    position: relative;
+}
+.ltr-hover::after,
+.ttb-hover::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #1c1d21;
+    transition: 200ms width, 200ms height;
+}
+.ltr-hover::after {
+    width: 0%;
+    height: 100%;
+}
+.ltr-hover:hover::after {
+    width: 100%;
+}
+.ttb-hover::after {
+    width: 100%;
+    height: 0%;
+}
+.ttb-hover:hover::after {
+    height: 100%;
+}
+/*
+ ! 2- Genral CSS
+*/
+:root {
+    --fontColor: #868f9b;
+    --mainColor: #6195ff;
+    --whiteColor: #fff;
+    --blackColor: #000;
+    --bg-grey: #fafafa;
+}
+::selection {
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    color: var(--fontColor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--blackColor);
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+input {
+    height: 40px;
+}
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: none;
+    border-bottom: 2px solid #eee;
+    opacity: 0.5;
+    font-family: inherit;
+    font-size: 18px;
+    transition: 200ms opacity;
+}
+input:focus,
+textarea:focus {
+    opacity: 1;
+}
+button {
+    font-family: inherit;
+}
+.scroll-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.scroll-up .scroll-up-btn {
+    background-color: var(--mainColor);
+    padding: 15px;
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 3px;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainColor);
+}
+.container {
+    width: 85%;
+    margin: auto;
+}
+.pd-y {
+    padding: 120px 0;
+}
+
+/**********************************/
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-header .section-title {
+    font-size: 36px;
+}
+.section-header .section-line {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--mainColor);
+    margin: 0 auto;
+}
+/* =============================================== */
+/*
+ ! 3- Section CSS
+*/
+/* ================================================================ */
+
+/* ================================================================= */

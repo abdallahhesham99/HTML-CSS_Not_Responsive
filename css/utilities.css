@@ -1,0 +1,91 @@
+/* =========================Margin============================== */
+/**Margin bottom*/
+.mg-b-5 {
+    margin-bottom: 5px;
+}
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+.mg-b-15 {
+    margin-bottom: 15px;
+}
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+.mg-b-25 {
+    margin-bottom: 25px;
+}
+/**Margin top*/
+
+.mg-t-5 {
+    margin-top: 5px;
+}
+.mg-t-10 {
+    margin-top: 10px;
+}
+.mg-t-15 {
+    margin-top: 15px;
+}
+.mg-t-20 {
+    margin-top: 20px;
+}
+.mg-t-25 {
+    margin-bottom: 25px;
+}
+/**Margin y*/
+
+.mg-y-5 {
+    margin: 5px 0;
+}
+.mg-y-10 {
+    margin: 10px 0;
+}
+.mg-y-15 {
+    margin: 15px 0;
+}
+.mg-y-20 {
+    margin: 20px 0;
+}
+.mg-y-25 {
+    margin: 25px 0;
+}
+/**Margin x*/
+
+.mg-x-5 {
+    margin: 5px 0;
+}
+.mg-x-10 {
+    margin: 10px 0;
+}
+.mg-x-15 {
+    margin: 15px 0;
+}
+.mg-x-20 {
+    margin: 20px 0;
+}
+.mg-x-25 {
+    margin: 25px 0;
+}
+
+/* ================================================================================ */
+
+/* ================================================================================ */
+.text-capitalize {
+    text-transform: capitalize;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+/* ================================================================================ */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearFix {
+    clear: both;
+}
+.overflow-hidden {
+    overflow: hidden;
+}

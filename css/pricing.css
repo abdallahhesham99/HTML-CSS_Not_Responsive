@@ -1,0 +1,64 @@
+/*3.8 Prices Section*/
+
+.pricing-section .price-item {
+    border: 1px solid #eee;
+    text-align: center;
+    float: left;
+    width: 31.3%;
+    padding: 50px 20px;
+}
+.pricing-section .price-item.mg {
+    margin: 0 3%;
+}
+/*item header*/
+
+.pricing-section .price-item .price-header .price-item-title {
+    color: var(--fontColor);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 300ms color;
+}
+.pricing-section .price-item:hover .price-header .price-item-title {
+    color: var(--mainColor);
+}
+.pricing-section .price-item .price-header .price {
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+.pricing-section .price-item .price-header .price .dollar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    margin: 0;
+    transition: 300ms color;
+}
+.pricing-section .price-item:hover .price-header .price .dollar,
+.pricing-section .price-item:hover .price-header .price .month {
+    color: var(--whiteColor);
+}
+.pricing-section .price-item .price-header .price .month {
+    color: var(--blackColor);
+    display: block;
+    font-size: 1rem;
+    transition: 300ms color;
+}
+/*item content*/
+.pricing-section .price-item .price-content .price-item-list li {
+    margin: 15px 0;
+}
+.pricing-section .price-item .price-content .price-item-btn {
+    margin: 10px 0;
+    padding: 10px 35px;
+    border: 2px solid var(--mainColor);
+    border-radius: 3px;
+    color: var(--mainColor);
+    font-size: 17px;
+    background-color: transparent;
+    cursor: pointer;
+}

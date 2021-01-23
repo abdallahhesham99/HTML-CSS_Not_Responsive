@@ -1,0 +1,31 @@
+/* 3.11 Blog Section */
+.blog-section {
+    background-color: var(--bg-grey);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.blog-section .blog-item {
+    float: left;
+    width: 32%;
+    background-color: var(--whiteColor);
+}
+.blog-item.mg {
+    margin: 0 2%;
+}
+.blog-item .blog-item-img img {
+    width: 100%;
+}
+.blog-item .blog-item-content {
+    padding: 20px 20px 40px;
+}
+
+.blog-meta li {
+    display: inline-block;
+    color: #10161a;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.blog-meta li i {
+    color: var(--mainColor);
+    margin-right: 5px;
+}

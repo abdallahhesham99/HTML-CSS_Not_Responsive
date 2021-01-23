@@ -1,0 +1,64 @@
+/*3.10 Team Section*/
+
+.team-section .team-content .team-item {
+    background-color: #f4f4f4;
+    float: left;
+    width: 31%;
+    padding: 40px 20px;
+    text-align: center;
+}
+.team-section .team-content .team-item.mg {
+    margin: 0 3%;
+}
+.team-section .team-content .team-item.ttb-hover {
+    z-index: 1;
+}
+.team-section .team-content .team-item .team-item-img {
+    position: relative;
+}
+.team-section .team-content .team-item .team-item-img img {
+    width: 100%;
+}
+.team-section .team-content .team-item .team-item-img .team-overlay {
+    position: absolute;
+    background-color: #1c1d21;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 200ms opacity, 200ms visibility;
+}
+.team-section .team-content .team-item:hover .team-item-img .team-overlay {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.team-section .team-content .team-item .team-item-img .team-social-icons a {
+    display: block;
+    margin-left: auto;
+    width: 45px;
+    height: 45px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    line-height: 2px;
+    font-size: 1.1rem;
+}
+.team-section .team-content .team-item .team-item-img .team-social-icons a i {
+    line-height: 40px;
+}
+.team-section .team-content .team-item .team-item-info .team-info-title {
+    margin: 10px;
+    transition: 300ms color;
+}
+.team-section .team-content .team-item:hover .team-item-info .team-info-title {
+    color: var(--whiteColor);
+}
+.team-section .team-content .team-item .team-item-info .team-info-job {
+    font-size: 14px;
+    transition: 300ms color;
+}
+.team-section .team-content .team-item:hover .team-item-info .team-info-job {
+    color: var(--mainColor);
+}

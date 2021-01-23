@@ -1,0 +1,24 @@
+/*3.3 About Section*/
+.about-section .about-content .about-item {
+    float: left;
+    width: 31%;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    position: relative;
+}
+.about-section .about-content .about-item.mg {
+    margin: 0 3.5%;
+}
+.about-section .about-content .about-item .about-item-icon {
+    color: var(--mainColor);
+}
+.about-section .about-content .about-item .about-item-title {
+    transition: 300ms color;
+}
+.about-section .about-content .about-item:hover .about-item-title {
+    color: var(--whiteColor);
+}
+.about-section .about-content .about-item .about-item-link {
+    color: var(--mainColor);
+}
